@@ -1,7 +1,7 @@
 name: Deploy Project
 on: [push, workflow_dispatch]
 jobs:
-  test:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
@@ -15,7 +15,7 @@ jobs:
       - name: Lint
         run: npm run lint
   deploy:
-    needs: test
+    needs: lint
     runs-on: ubuntu-latest
     steps: 
       - name: Get code
