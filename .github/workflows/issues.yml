@@ -1,7 +1,7 @@
 name: Catch issues info
 on: [issues]
 jobs:
-  llsten:
+  listen-issues:
     runs-on: ubuntu-latest
     steps:
       - name: Issue info
