@@ -1,4 +1,4 @@
-name: Deploy Project
+name: Catch issues info
 on: [issues]
 jobs:
   llsten:
